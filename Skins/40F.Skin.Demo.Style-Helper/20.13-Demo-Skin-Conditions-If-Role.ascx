@@ -18,6 +18,11 @@
 	
 	<fortyfingers:STYLEHELPER ID="SH1" IfRole="" AddCssFile="[S]/Css/Grey.css" runat="server" />
 	<fortyfingers:STYLEHELPER ID="SH2" IfRole="Superusers" AddCssFile="[S]/Css/Blue.css" runat="server" />
+	<fortyfingers:STYLEHELPER ID="SH3" IfRole="!Administrators" Content="You are not an Administrator &lt;br&gt;" runat="server" />
+	<fortyfingers:STYLEHELPER ID="SH4" IfRole="!Superusers" Content="You are not a SuperUser &lt;br&gt;" runat="server" />
+	
+	<fortyfingers:STYLEHELPER ID="SH5" IfRole="!Superusers,!Administrators" Content="You are not an Administrator nor a SuperUser &lt;br&gt;" runat="server" />
+
 	
 	<!-- END -->
 	
