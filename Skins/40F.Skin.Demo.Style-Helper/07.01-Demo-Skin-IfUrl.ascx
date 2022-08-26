@@ -16,7 +16,10 @@
 
 	<%@ Register TagPrefix="fortyfingers" TagName="STYLEHELPER" Src="~/DesktopModules/40Fingers/SkinObjects/StyleHelper/StyleHelper.ascx" %> 
 	
-	<fortyfingers:STYLEHELPER ID="SH1" IfUrl="Demo" AddToBodyClass="DemoPage" AddToHead="<style>body{background-color:#c0f490;}</style>" Content="<h4>'Demo page'</h4>Text written by Style Helper using condition IfUrl=Demo<br >Styling added to Body Tag." runat="server" />
+	<fortyfingers:STYLEHELPER ID="SH1" IfUrl="ifUrl/Open-for-Demo" AddToBodyClass="DemoPage" AddToHead="<style>body{background-color:#c0f490;}</style>" Content="<h4>'Demo page'</h4>Text written by Style Helper using condition IfUrl=Demo<br >Styling added to Body Tag." runat="server" />
+	
+	<<!-- Currently does not work: -->
+	<fortyfingers:STYLEHELPER ID="SH2" IfUrl="IfUrl$"  Content="IfUrl='ifUrl$' is true for The Demo Page, not it's children" runat="server" />
 	
 	<!-- END -->
 		
