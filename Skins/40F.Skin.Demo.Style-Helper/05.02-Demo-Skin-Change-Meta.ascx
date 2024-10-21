@@ -19,6 +19,10 @@
     <fortyfingers:STYLEHELPER ID="sh1" ChangeMeta='id=MetaRobots|content=noindex, nofollow' runat="server" />
 
     <h2>Changes the MetaRobots Meta Tag to "noindex, nofollow"</h2>
+	   
+	<h2>Changes Page Description</h2>
+	<fortyfingers:STYLEHELPER ID="sh2" ChangeMeta='id=MetaDescription|content=Page name: [Page:Name]' runat="server" />
+	
     <p>Press F12 to check the page head</p>
 
 	<!-- END -->
