@@ -104,7 +104,7 @@
 			<h2 class="description-main">Page skin: <%=SkinName%></h2>
 		</div>
 		<div class="right">
-		<a class="icon40" href="https://www.40fingers.net/Products/DNN-Demo-Skins" target="_blank"><i class="material-icons">file_download</i></a>
+		<a class="icon40" href="https://www.40fingers.net/Products/DNN-Stylehelper" target="_blank"><i class="material-icons">file_download</i></a>
 		</div>
 	</header>
 	<section class="main c-pad-h40 c-pad-v20">
