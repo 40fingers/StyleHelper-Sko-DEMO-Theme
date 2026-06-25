@@ -2,7 +2,7 @@
     Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
 
 
-<!-- #include file="Base/Header.ascx" -->
+<!-- #include file="Base/Base.ascx" -->
 
 	<div class="SideMenu">
 		<dnn:MENU MenuStyle="Menus/00.00-DDR-XSLT-UL-Classes" runat="server" NodeSelector="0,0,0"></dnn:MENU>
@@ -16,7 +16,10 @@
 	
 <%@ Register TagPrefix="fortyfingers" TagName="STYLEHELPER" Src="~/DesktopModules/40Fingers/SkinObjects/StyleHelper/StyleHelper.ascx" %> 
 
-<fortyfingers:STYLEHELPER ID="STYLERHELPER2" AddToBodyClass="TestClass" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLERHELPER2" FilterBodyClass="true" AddToBodyClass="inject-always" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLERHELPER4" FilterBodyClass="true" IfURL=".me,.dev,.local" AddBodyClass="false" AddToBodyClass="inject-if-local-site" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLERHELPER3" IfQs="ctl:edit" FilterBodyClass="true"  AddToBodyClass="inject-if-edit-page" runat="server" />
+
 	
 	<!-- END -->
 	

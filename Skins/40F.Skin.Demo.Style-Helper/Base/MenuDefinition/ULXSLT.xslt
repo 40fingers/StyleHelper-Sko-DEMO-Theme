@@ -20,6 +20,14 @@
 							<xsl:if test="@breadcrumb=1"><xsl:text>Active</xsl:text></xsl:if>
 							<xsl:if test="@breadcrumb=1 and @selected!=1"><xsl:text> Parent</xsl:text></xsl:if>
 							 <xsl:text> Level</xsl:text><xsl:value-of select="$level" />
+							 <xsl:choose>
+								<xsl:when test="node">
+									<xsl:text> HasChildren</xsl:text>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:text> NoChildren</xsl:text>
+								</xsl:otherwise>
+							</xsl:choose>
 						</xsl:attribute>
 						<xsl:choose>
 							<xsl:when test="@enabled = 1">

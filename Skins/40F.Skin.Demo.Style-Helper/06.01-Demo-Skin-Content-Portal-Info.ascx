@@ -2,7 +2,7 @@
     Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
 
 
-<!-- #include file="Base/Header.ascx" -->
+<!-- #include file="Base/Base.ascx" -->
 
 	<div class="SideMenu">
 		<dnn:MENU MenuStyle="Menus/00.00-DDR-XSLT-UL-Classes" runat="server" NodeSelector="0,0,0"></dnn:MENU>
